@@ -1,0 +1,119 @@
+@import "./../utils/variables";
+.header-b {
+  background-color: transparent;
+  transition: all 0.4s ease 0s;
+  box-shadow: 0 3px 9px rgb(0 0 0 / 5%);
+  position: fixed;
+  width: 100%;
+  z-index: 111;
+  .container {
+    .row {
+      .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .navbar-left {
+          .navbar-logo {
+            a {
+              font-size: 26px;
+              text-decoration: none;
+              font-family: "Volkhov", serif;
+              color: $secondary-color;
+              position: relative;
+              transition: all 0.75s;
+              &:hover {
+                color: #000 !important;
+              }
+
+              i {
+                position: absolute;
+                top: -4px;
+                left: 38px;
+                font-size: 14px;
+              }
+            }
+          }
+        }
+        .navbar-right {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .navbar-search {
+            margin: 0 10px;
+            input {
+              outline: none;
+              border: none;
+              background: #fff url(../../img/search.png) no-repeat 7px center;
+              border: solid 1px #eee;
+              padding: 0 10px;
+              width: 30px;
+              height: 30px;
+              border-radius: 30px;
+              transition: all 0.5s;
+              cursor: pointer;
+            }
+          }
+          .navbar-theme {
+            .mode-container {
+              i.fa-regular {
+                color: #fff !important;
+                &:hover {
+                  color: $secondary-color;
+                }
+              }
+            }
+            .toggle-theme-icon {
+              &:hover {
+                color: $secondary-color;
+                cursor: pointer;
+              }
+            }
+            i.fa-regular {
+              &:hover {
+                color: $secondary-color;
+              }
+            }
+          }
+
+          .navbar-bar {
+            position: relative;
+            i {
+              &:hover {
+                cursor: pointer;
+              }
+            }
+            .navbar-link {
+              position: absolute;
+              top: 120%;
+              left: -700%;
+              background-color: #fff;
+              text-align: center;
+              border-radius: 4px;
+              padding: 10px 20px;
+              display: none;
+              // i {
+              //   transition: all 0.5s;
+              //   &:hover {
+              //     color: $secondary-color;
+              //   }
+              // }
+              a {
+                text-decoration: none;
+                padding: 4px 14px;
+                text-transform: uppercase;
+                color: $text-color;
+                font-weight: 600;
+                display: block;
+                font-family: "Source Sans Pro", sans-serif !important;
+                &:hover {
+                  color: $secondary-color;
+                  transition: all 0.5s;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

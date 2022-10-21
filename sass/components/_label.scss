@@ -1,0 +1,9 @@
+@import ".././utils/variables";
+.label-style {
+  color: $primary-color !important;
+  display: inline-block;
+  background: rgb(0 159 77 / 16%);
+  padding: 5px 20px;
+  border-radius: 15px;
+  font-weight: 600;
+}

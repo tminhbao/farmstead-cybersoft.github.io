@@ -1,0 +1,22 @@
+@import "./base/reset";
+
+@import "./components/button";
+@import "./components/label";
+
+@import "./layouts/header";
+@import "./layouts/HeaderSCSS";
+@import "./layouts/footer";
+@import "./layouts/FooterSCSS";
+
+@import "./pages/index";
+@import "./pages/about";
+@import "./pages/services";
+@import "./pages/blog";
+@import "./pages/blog2";
+@import "./pages/404";
+@import "./pages/contact";
+
+@import "./utils/variables";
+@import "./utils/b-responsive";
+@import "./utils/responsive";
+

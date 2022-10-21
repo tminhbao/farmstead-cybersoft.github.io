@@ -1,0 +1,126 @@
+@import "./../utils/variables";
+
+.header {
+  background-color: transparent;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  transition: all .5s;
+  z-index: 100;
+  .container {
+    .navbar {
+      width: 100%;
+      padding: 20px 0;
+      position: relative;
+      z-index: 2;
+      .navbar-left {
+          .logo {
+            font-size: 32px;
+            text-decoration: none;
+            font-family: "Volkhov", serif;
+            color: $secondary-color;
+            position: relative;
+            transition: all .3s;
+            i {
+              position: absolute;
+              top: -6px;
+              left: 52px;
+              font-size: 20px;
+            }
+          
+          }
+          .logo.change-css {
+            color: #060606;
+          }
+      }
+      
+      .menu {
+        .nav-link {
+          display: block;
+          list-style: none;
+          width: 230px;
+          text-align: center;
+          background-color: #ffffff;
+          border-radius: 5px;
+          position: absolute;
+          top: 65px;
+          right: 60px;
+          margin: 0;
+          padding: 0;
+          display: none;
+          cursor: pointer;
+          li {
+            padding: 7px 0;
+            a {
+              font-family: 'Source Sans Pro', sans-serif;
+              text-decoration: none;
+              text-transform: uppercase;
+              color: $main-text-color;
+              font-weight: 600;
+              &:hover {
+                color: $secondary-color;
+                transition: all 0.5s;
+              }
+            }
+          }
+        } 
+        ul#nav-link.nav-link.active {
+          display: block;
+        }
+      }
+      .navbar-right {
+        // position: absolute;
+        // right: 0;
+        .navbar-search {
+          input {
+            outline: none;
+            border: none;
+            background: #fff url(../../img/search.png) no-repeat 7px center;
+            border: solid 1px #eee;
+            padding: 0 10px;
+            width: 30px;
+            height: 30px;
+            border-radius: 30px;
+            transition: all 0.5s;
+            cursor: pointer;
+          }
+        }
+        .navbar-theme {
+          padding: 0 10px;
+          .toggle-theme-icon {
+            &:hover {
+              color: $secondary-color;
+              cursor: pointer;
+            }
+          }
+          .fa-moon {
+            color: white;
+          }
+        }
+        #menu-button {
+            font-size: 20px;
+            font-weight: bold;
+            color: #ffffff;
+            cursor: pointer;
+            transition: all .3s;
+        }
+        #menu-button.change-css {
+          color: #060606;
+        }
+      }
+    }
+    .navbar.change-css {
+      padding-top: 15px;
+    }
+  }
+}
+
+.header.change-css {
+  background-image: none;
+  background-color: #ffffff;
+  height: 70px;
+} 
+
+
+
